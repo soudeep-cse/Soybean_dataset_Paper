@@ -48,18 +48,6 @@ The project follows a structured approach to build and evaluate the **Hybrid Seq
 
 All required installations and dependencies are mentioned within each notebook. There is no need to use a separate `requirements.txt` file.
 
-## Citation
-
-If you use this repository for your research, please cite:
-
-```
-@article{your_paper_reference,
-  title={Hybrid Sequential CNN-GNN Model for Soybean Leaf Disease Classification},
-  author={Your Name},
-  journal={Your Journal},
-  year={2025}
-}
-```
 
 ## License
 
