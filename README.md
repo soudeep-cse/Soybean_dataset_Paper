@@ -15,19 +15,7 @@ The project follows a structured approach to build and evaluate the **Hybrid Seq
 
 - **MobileNetV2** for feature extraction.
 - **Graph Convolutional Network (GCN)** for relational learning.
-- **Explainable AI (XAI)** for model interpretation.
-
-## Requirements
-
-To run the code in this repository, you need the following Python libraries:
-
-- Python 3.8+
-- TensorFlow / PyTorch
-- NetworkX
-- Scikit-learn
-- Matplotlib
-- OpenCV
-
+- **Explainable AI (XAI)** for model interpretation, including **Grad-CAM** and **Eigen-CAM**.
 
 ## Repository Structure
 
@@ -35,24 +23,43 @@ To run the code in this repository, you need the following Python libraries:
 - `gnn-soybean.ipynb` - GNN-based approach for graph-based disease classification.
 - `parallel-cnn-gnn.ipynb` - Parallel architecture combining CNN and GNN.
 - `seq-cnn-gnn.ipynb` - Proposed **Hybrid Sequential CNN-GNN model**.
-- `seq-cnn-gnn-xai.ipynb` - Explainable AI (XAI) version of the sequential CNN-GNN model.
+- `seq-cnn-gnn-xai.ipynb` - Explainable AI (XAI) version of the sequential CNN-GNN model, including **Grad-CAM** and **Eigen-CAM**.
 - `seq-gnn-cnn.ipynb` - Alternate sequence where GNN is processed before CNN.
 - `traditional-ml.ipynb` - Baseline results using traditional machine learning classifiers.
 
 ## Usage
 
 1. **Clone the repository**:
+
    ```bash
-   git clone https://github.com/yourusername/hybrid-cnn-gnn.git
-   cd hybrid-cnn-gnn
+   git clone https://github.com/soudeep-cse/Soybean_dataset_Paper.git
+   cd Soybean_dataset_Paper
    ```
 
 2. **Download the dataset**:
+
    - Ensure the **Soybean Diseased Leaf Dataset** is placed in the `data` directory.
 
 3. **Run the Jupyter Notebook**:
+
    - Open the Jupyter Notebook `seq-cnn-gnn.ipynb` and run the cells to preprocess the data, train the models, and evaluate the results.
 
+## Note on Requirements
+
+All required installations and dependencies are mentioned within each notebook. There is no need to use a separate `requirements.txt` file.
+
+## Citation
+
+If you use this repository for your research, please cite:
+
+```
+@article{your_paper_reference,
+  title={Hybrid Sequential CNN-GNN Model for Soybean Leaf Disease Classification},
+  author={Your Name},
+  journal={Your Journal},
+  year={2025}
+}
+```
 
 ## License
 
