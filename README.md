@@ -1,4 +1,4 @@
-# A Hybrid Deep Learning Framework: Sequential CNN-GNN for Soybean Leaf Disease classification.
+# Soybean Leaf Disease Classification.
 ## Dataset
 
 The following dataset was used in this project:
