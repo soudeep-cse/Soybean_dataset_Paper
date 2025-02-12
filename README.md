@@ -1,7 +1,4 @@
-# Hybrid Sequential CNN-GNN Model for Soybean Leaf Disease Classification
-
-This repository contains the implementation of a **Hybrid Sequential CNN-GNN model** designed for **Soybean Leaf Disease Classification**.
-
+# A Hybrid Deep Learning Framework: Sequential CNN-GNN for Soybean Leaf Disease classification.
 ## Dataset
 
 The following dataset was used in this project:
