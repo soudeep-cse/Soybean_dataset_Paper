@@ -1,37 +1,47 @@
-# Soybean Leaf Disease Classification.
+# Soybean Leaf Disease Classification
+
+This repository implements a hybrid Sequential CNN-GNN model for detecting soybean leaf diseases. The model combines efficient local feature extraction with global relational learning, and it also provides explainability through Grad-CAM and Eigen-CAM.
+
+---
+
 ## Dataset
 
-The following dataset was used in this project:
+**Soybean Diseased Leaf Dataset**  
+A high-quality image dataset featuring soybean leaves affected by **10 different diseases**.  
+Access the dataset on [Kaggle](https://www.kaggle.com/datasets/sivm205/soybean-diseased-leaf-dataset).
 
-1. **Soybean Diseased Leaf Dataset** - A high-quality image dataset containing soybean leaves affected by **10 different diseases**.
-   - [Soybean Diseased Leaf Dataset](https://www.kaggle.com/datasets/sivm205/soybean-diseased-leaf-dataset)
+---
 
 ## Approach
 
-The project follows a structured approach to build and evaluate the **Hybrid Sequential CNN-GNN model**, leveraging:
+The project follows a structured approach with two main components:
 
-- **MobileNetV2** for feature extraction.
-- **Graph Convolutional Network (GCN)** for relational learning.
-- **Explainable AI (XAI)** for model interpretation, including **Grad-CAM** and **Eigen-CAM**.
+- **Hybrid Sequential CNN-GNN Model:**  
+  - **MobileNetV2:** Extracts local features from soybean leaf images.
+  - **Graph Convolutional Network (GCN):** Captures inter-image relational dependencies.
+  
+- **Explainable AI (XAI):**  
+  Enhances the model’s interpretability using Grad-CAM and Eigen-CAM to generate visual explanations of the classification decisions.
+
+---
 
 ## Repository Structure
 
-- `cnn-soybean.ipynb` - CNN-based model using MobileNetV2.
-- `gnn-soybean.ipynb` - GNN-based approach for graph-based disease classification.
-- `parallel-cnn-gnn.ipynb` - Parallel architecture combining CNN and GNN.
-- `seq-cnn-gnn.ipynb` - Proposed **Hybrid Sequential CNN-GNN model**.
-- `seq-cnn-gnn-xai.ipynb` - Explainable AI (XAI) version of the sequential CNN-GNN model, including **Grad-CAM** and **Eigen-CAM**.
-- `seq-gnn-cnn.ipynb` - Alternate sequence where GNN is processed before CNN.
-- `traditional-ml.ipynb` - Baseline results using traditional machine learning classifiers.
+- **`sequential-cnn-gnn-benchmarking.ipynb`**  
+  Contains all the code for the hybrid sequential CNN-GNN model used for disease classification (excluding XAI).
+
+- **`seq-cnn-gnn-xai.ipynb`**  
+  Includes the code and output for the XAI extensions using Grad-CAM and Eigen-CAM.
+---
 
 ## Usage
 
-1. **Clone the repository**:
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/soudeep-cse/Soybean_dataset_Paper.git
    cd Soybean_dataset_Paper
-   ```
+
 
 2. **Download the dataset**:
 
@@ -39,7 +49,7 @@ The project follows a structured approach to build and evaluate the **Hybrid Seq
 
 3. **Run the Jupyter Notebook**:
 
-   - Open the Jupyter Notebook `seq-cnn-gnn.ipynb` and run the cells to preprocess the data, train the models, and evaluate the results.
+   - Open the Jupyter Notebook `sequential-cnn-gnn-benchmarking.ipynb` and run the cells to preprocess the data, train the models, and evaluate the results.
 
 ## Note on Requirements
 
