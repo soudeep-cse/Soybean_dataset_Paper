@@ -18,7 +18,7 @@ The project follows a structured approach with two main components:
 
 - **Hybrid Sequential CNN-GNN Model:**  
   - **MobileNetV2:** Extracts local features from soybean leaf images.
-  - **Graph Convolutional Network (GCN):** Captures inter-image relational dependencies.
+  - **GraphSAGE:** Captures inter-image relational dependencies by aggregating features from neighboring nodes.
   
 - **Explainable AI (XAI):**  
   Enhances the model’s interpretability using Grad-CAM and Eigen-CAM to generate visual explanations of the classification decisions.
@@ -40,7 +40,6 @@ The project follows a structured approach with two main components:
 
    ```bash
    git clone https://github.com/soudeep-cse/Soybean_dataset_Paper.git
-   cd Soybean_dataset_Paper
 
 
 2. **Download the dataset**:
