@@ -40,6 +40,7 @@ The project follows a structured approach with two main components:
 
    ```bash
    git clone https://github.com/soudeep-cse/Soybean_dataset_Paper.git
+   cd Soybean_dataset_Paper
 
 
 2. **Download the dataset**:
